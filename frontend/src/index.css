@@ -1,0 +1,5 @@
+/* Clean reset for custom UI */
+body {
+  margin: 0;
+  padding: 0;
+}
