@@ -113,7 +113,7 @@ def list_books():
     return {"books": books}
 
 @app.post("/api/upload")
-async def upload_pdf(file: UploadFile = File(...)):
+def upload_pdf(file: UploadFile = File(...)):
     if not file.filename.endswith(".pdf"):
         raise HTTPException(status_code=400, detail="Only PDF files are allowed")
     
